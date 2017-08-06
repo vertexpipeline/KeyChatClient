@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500" prefWidth="300" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controller">
+   <children>
+      <TextField fx:id="nickField" layoutX="14.0" layoutY="461.0" prefHeight="25.0" prefWidth="146.0" promptText="Type your nick" />
+      <ToggleButton fx:id="connectButton" layoutX="168.0" layoutY="461.0" mnemonicParsing="false" onAction="#connectClicked" prefHeight="25.0" prefWidth="118.0" text="Connect" />
+      <TextArea fx:id="textArea" layoutX="14.0" layoutY="351.0" onKeyPressed="#textkeyPressed" prefHeight="99.0" prefWidth="271.0" promptText="Type here..." />
+      <ListView fx:id="messagesList" layoutX="14.0" layoutY="14.0" prefHeight="329.0" prefWidth="271.0" />
+   </children>
+</AnchorPane>
